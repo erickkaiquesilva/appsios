@@ -13,10 +13,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+<<<<<<< HEAD
     var refreshControl = UIRefreshControl()
     
     var fetchingMore = false
     
+=======
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
     var listRepo: [Repo] = []
     let request = HttpRequest()
     
@@ -30,6 +33,7 @@ class ViewController: UIViewController {
         }) { (error) in
             print(error)
         }
+<<<<<<< HEAD
 
         addRefreshControl()
     }
@@ -79,6 +83,11 @@ class ViewController: UIViewController {
     }
     
     
+=======
+    }
+
+
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
 }
 
 
@@ -108,4 +117,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570

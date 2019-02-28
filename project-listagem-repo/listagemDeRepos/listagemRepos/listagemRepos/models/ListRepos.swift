@@ -9,7 +9,10 @@
 import Foundation
 
 struct ListRepo: Decodable {
+<<<<<<< HEAD
     let total_count: Int
+=======
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
     let items: [Repo]
 }
 //

@@ -54,7 +54,11 @@
                                                     </variation>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nB-nP-6Dn">
+<<<<<<< HEAD
                                                     <rect key="frame" x="76" y="52" width="29" height="22.5"/>
+=======
+                                                    <rect key="frame" x="76" y="52" width="33" height="22.5"/>
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" red="0.90536058649999995" green="0.85881564529999999" blue="0.32698709320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="☆">
@@ -67,7 +71,11 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="230" id="TAm-aa-Q9j"/>
                                                     </constraints>
+<<<<<<< HEAD
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="13"/>
+=======
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -75,19 +83,30 @@
                                             <constraints>
                                                 <constraint firstItem="xjh-GQ-vje" firstAttribute="leading" secondItem="hVM-DA-3TL" secondAttribute="leading" id="57w-pu-aSO"/>
                                                 <constraint firstItem="9nB-nP-6Dn" firstAttribute="leading" secondItem="xjh-GQ-vje" secondAttribute="leading" constant="8" id="C4y-mw-mr5"/>
+<<<<<<< HEAD
                                                 <constraint firstItem="K4J-fg-Rzw" firstAttribute="leading" secondItem="9nB-nP-6Dn" secondAttribute="trailing" constant="20" id="CJ9-Sj-QpJ"/>
+=======
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
                                                 <constraint firstItem="xjh-GQ-vje" firstAttribute="trailing" secondItem="hVM-DA-3TL" secondAttribute="trailing" id="DbY-KO-xZC"/>
                                                 <constraint firstAttribute="trailing" secondItem="K4J-fg-Rzw" secondAttribute="trailing" constant="20" id="E6t-1A-833"/>
                                                 <constraint firstItem="xjh-GQ-vje" firstAttribute="bottom" secondItem="EbP-fm-Y7v" secondAttribute="bottomMargin" constant="4" id="Fyj-as-xC3"/>
                                                 <constraint firstItem="THv-SF-lgM" firstAttribute="top" secondItem="EbP-fm-Y7v" secondAttribute="topMargin" constant="8" id="K1f-3H-THn"/>
                                                 <constraint firstItem="hVM-DA-3TL" firstAttribute="leading" secondItem="THv-SF-lgM" secondAttribute="trailing" constant="8" id="RwC-Jh-rFE"/>
                                                 <constraint firstItem="hVM-DA-3TL" firstAttribute="top" secondItem="EbP-fm-Y7v" secondAttribute="topMargin" constant="4" id="d23-DZ-nIF"/>
+<<<<<<< HEAD
+=======
+                                                <constraint firstAttribute="bottom" secondItem="9nB-nP-6Dn" secondAttribute="bottom" id="dhr-5r-pZf"/>
+                                                <constraint firstItem="K4J-fg-Rzw" firstAttribute="leading" secondItem="9nB-nP-6Dn" secondAttribute="trailing" constant="16" id="ffI-bR-HxB"/>
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
                                                 <constraint firstItem="9nB-nP-6Dn" firstAttribute="top" secondItem="hVM-DA-3TL" secondAttribute="bottom" constant="28" id="gZB-Gg-kpI"/>
                                                 <constraint firstItem="xjh-GQ-vje" firstAttribute="top" secondItem="EbP-fm-Y7v" secondAttribute="topMargin" constant="8" id="gr9-9H-ZVP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="hVM-DA-3TL" secondAttribute="bottom" constant="40" id="h9P-mk-zf6"/>
                                                 <constraint firstItem="THv-SF-lgM" firstAttribute="leading" secondItem="EbP-fm-Y7v" secondAttribute="leadingMargin" constant="8" id="hFB-SN-Lc5"/>
                                                 <constraint firstItem="K4J-fg-Rzw" firstAttribute="top" secondItem="hVM-DA-3TL" secondAttribute="bottom" constant="31" id="hH8-PT-uXC"/>
+<<<<<<< HEAD
                                                 <constraint firstAttribute="bottom" secondItem="9nB-nP-6Dn" secondAttribute="bottom" id="k5N-nc-FuF"/>
+=======
+>>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
                                                 <constraint firstAttribute="bottomMargin" secondItem="THv-SF-lgM" secondAttribute="bottom" constant="8" id="sBs-3b-ZWV"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="hVM-DA-3TL" secondAttribute="trailing" constant="8" id="tVl-L2-3W7"/>
                                             </constraints>
