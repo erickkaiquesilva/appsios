@@ -7,43 +7,75 @@
 //
 
 import Foundation
-class HttpRequest {
+
+protocol HttpRequester {
+    func request(endpoint: Endpoint, success: ((_ listRepo: ListRepo)-> Void)?, failure: ((_ error: Error)-> Void)? )
+}
+
+class HttpRequest: HttpRequester {
     
-<<<<<<< HEAD
-    func resquestRepo(page: Int = 1, per_page: Int = 10, success: ((_ listRepo: ListRepo)-> Void)?, failure: ((_ error: Error)-> Void)?){
+    func request(endpoint: Endpoint, success: ((_ listRepo: ListRepo)-> Void)?, failure: ((_ error: Error)-> Void)?) {
+        var request = URLRequest(url: endpoint.url)
+        request.httpMethod = endpoint.method.rawValue
         
-        guard let url = URL(string: "https://api.github.com/search/repositories?q=language:swift&sort=stars&per_page=\(per_page)&page=\(page)")else{ return }
-=======
-    func resquestRepo(success: ((_ listRepo: ListRepo)-> Void)?, failure: ((_ error: Error)-> Void)?){
-        
-        guard let url = URL(string: "https://api.github.com/search/repositories?q=language:swift&sort=stars")else{ return }
->>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
-        
-        var request = URLRequest(url: url)
-        
-        request.httpMethod = "GET"
-<<<<<<< HEAD
         print(request)
-=======
         
->>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
         let session = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
             guard let data = data else{return}
-            
             do{
                 let users = try JSONDecoder().decode(ListRepo.self, from: data)
                 print(users)
                 success?(users)
-                
-                
-                
             }catch{
                 print(error)
                 failure?(error)
             }
         }
-        
-        return session.resume();
+        return session.resume()
+    }
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+enum Method: String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case delete = "DELETE"
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+typealias EndpointType = (path: String, method: Method)
+
+protocol Endpoint {
+    var urlString: String { get }
+    var path: EndpointType { get }
+    var url: URL { get }
+    var method: Method { get }
+}
+
+enum GithubEndpoint: Endpoint {
+    case repositories(_ page: Int, _ perPage: Int)
+    
+    internal var urlString: String {
+        return "https://api.github.com"
+    }
+    
+    internal var path: EndpointType {
+        switch self {
+        case .repositories(let page, let perPage):
+            return (path: "/search/repositories?q=language:swift&sort=stars&page=\(page)&per_page=\(perPage)", method: .get)
+        }
+    }
+    
+    var method: Method {
+        return path.method
+    }
+    
+    var url: URL {
+        return URL(string: urlString + path.path)!
     }
 }
+

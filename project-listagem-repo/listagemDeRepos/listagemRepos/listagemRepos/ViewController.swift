@@ -12,28 +12,33 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
-    
-<<<<<<< HEAD
+   
     var refreshControl = UIRefreshControl()
     
     var fetchingMore = false
     
-=======
->>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
     var listRepo: [Repo] = []
-    let request = HttpRequest()
+    let requester: HttpRequester = HttpRequest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        request.resquestRepo(success: { (listRepo) in
-            self.listRepo = listRepo.items
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
+        
+        requester.request(endpoint: GithubEndpoint.repositories(1, 10), success: { (listRepo) in
+        self.listRepo = listRepo.items
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
         }) { (error) in
             print(error)
         }
-<<<<<<< HEAD
+//        request.resquestRepo(page: 1, per_page: 10, success: { (listRepo) in
+//            self.listRepo = listRepo.items
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+//        }) { (error) in
+//            print(error)
+//        }
 
         addRefreshControl()
     }
@@ -50,6 +55,7 @@ class ViewController: UIViewController {
     
     @objc func refreshList(){
         tableView.reloadData()
+        refreshControl.endRefreshing()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -60,12 +66,12 @@ class ViewController: UIViewController {
         
         if offsetY > contentHeight - scrollView.frame.height{
             
-            var count_page = 2
-            var per_page = 100
+            var countPage = 2
+            var perPage = 100
             
-            while per_page < 5000{
-                if per_page <= 300{
-                    request.resquestRepo(page: count_page, per_page: per_page, success: { (listRepo) in
+            while perPage < 5000{
+                if perPage <= 200{
+                    requester.request(endpoint: GithubEndpoint.repositories(countPage, perPage), success: { (listRepo) in
                         self.listRepo += listRepo.items
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
@@ -73,21 +79,24 @@ class ViewController: UIViewController {
                     }) { (error) in
                         print(error)
                     }
+                
+//                    requester.request(ebd, success: { (listRepo) in
+//                        self.listRepo += listRepo.items
+//                        DispatchQueue.main.async {
+//                            self.tableView.reloadData()
+//                        }
+//                    }) { (error) in
+//                        print(error)
+//                    }
                 }
-                count_page = count_page + 1
-                per_page = per_page + 100
+                countPage = countPage + 1
+                perPage = perPage + 100
             }
             
         }
         
     }
     
-    
-=======
-    }
-
-
->>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570
 }
 
 
@@ -117,7 +126,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 08af8f025ae0ee07dde7b858e93f28346ace1570

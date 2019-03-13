@@ -15,8 +15,30 @@
 		F42D4AAB221ACFC200A3A19E /* ListRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42D4AA9221ACFC100A3A19E /* ListRepos.swift */; };
 		F42D4AAF221C2DF000A3A19E /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42D4AAE221C2DF000A3A19E /* HttpRequest.swift */; };
 		F42D4AB2221C34AB00A3A19E /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42D4AB1221C34AB00A3A19E /* UsersTableViewCell.swift */; };
+		F43540482237FF9300F6C856 /* listagemReposRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43540472237FF9300F6C856 /* listagemReposRequestTests.swift */; };
+		F43540562238062200F6C856 /* listagemReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43540552238062200F6C856 /* listagemReposUITests.swift */; };
+		F435405F223826F100F6C856 /* MockRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435405E223826F100F6C856 /* MockRequester.swift */; };
+		F43540622238279300F6C856 /* ListRepoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43540612238279300F6C856 /* ListRepoFactory.swift */; };
 		F487DE172225715E00AA7C05 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487DE162225715E00AA7C05 /* UIImage+Utils.swift */; };
+		F487DE19222999A500AA7C05 /* NewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487DE18222999A500AA7C05 /* NewRequest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F435404A2237FF9300F6C856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42D4A8B221ACEE100A3A19E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42D4A92221ACEE100A3A19E;
+			remoteInfo = listagemRepos;
+		};
+		F43540582238062200F6C856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42D4A8B221ACEE100A3A19E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42D4A92221ACEE100A3A19E;
+			remoteInfo = listagemRepos;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F42D4A93221ACEE100A3A19E /* listagemRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listagemRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,11 +51,34 @@
 		F42D4AA9221ACFC100A3A19E /* ListRepos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRepos.swift; sourceTree = "<group>"; };
 		F42D4AAE221C2DF000A3A19E /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		F42D4AB1221C34AB00A3A19E /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		F43540452237FF9300F6C856 /* listagemReposRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = listagemReposRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43540472237FF9300F6C856 /* listagemReposRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listagemReposRequestTests.swift; sourceTree = "<group>"; };
+		F43540492237FF9300F6C856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43540532238062200F6C856 /* listagemReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = listagemReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43540552238062200F6C856 /* listagemReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listagemReposUITests.swift; sourceTree = "<group>"; };
+		F43540572238062200F6C856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F435405E223826F100F6C856 /* MockRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequester.swift; sourceTree = "<group>"; };
+		F43540612238279300F6C856 /* ListRepoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepoFactory.swift; sourceTree = "<group>"; };
 		F487DE162225715E00AA7C05 /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		F487DE18222999A500AA7C05 /* NewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F42D4A90221ACEE100A3A19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43540422237FF9300F6C856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43540502238062200F6C856 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				F42D4A95221ACEE100A3A19E /* listagemRepos */,
+				F43540462237FF9300F6C856 /* listagemReposRequestTests */,
+				F43540542238062200F6C856 /* listagemReposUITests */,
 				F42D4A94221ACEE100A3A19E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				F42D4A93221ACEE100A3A19E /* listagemRepos.app */,
+				F43540452237FF9300F6C856 /* listagemReposRequestTests.xctest */,
+				F43540532238062200F6C856 /* listagemReposUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				F42D4AAE221C2DF000A3A19E /* HttpRequest.swift */,
+				F487DE18222999A500AA7C05 /* NewRequest.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -98,6 +148,42 @@
 				F42D4AB1221C34AB00A3A19E /* UsersTableViewCell.swift */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		F43540462237FF9300F6C856 /* listagemReposRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F43540602238278500F6C856 /* Factory */,
+				F435405D223826D100F6C856 /* MockRequester */,
+				F43540472237FF9300F6C856 /* listagemReposRequestTests.swift */,
+				F43540492237FF9300F6C856 /* Info.plist */,
+			);
+			path = listagemReposRequestTests;
+			sourceTree = "<group>";
+		};
+		F43540542238062200F6C856 /* listagemReposUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F43540552238062200F6C856 /* listagemReposUITests.swift */,
+				F43540572238062200F6C856 /* Info.plist */,
+			);
+			path = listagemReposUITests;
+			sourceTree = "<group>";
+		};
+		F435405D223826D100F6C856 /* MockRequester */ = {
+			isa = PBXGroup;
+			children = (
+				F435405E223826F100F6C856 /* MockRequester.swift */,
+			);
+			path = MockRequester;
+			sourceTree = "<group>";
+		};
+		F43540602238278500F6C856 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F43540612238279300F6C856 /* ListRepoFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		F487DE152225712100AA7C05 /* extensions */ = {
@@ -128,6 +214,42 @@
 			productReference = F42D4A93221ACEE100A3A19E /* listagemRepos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F43540442237FF9300F6C856 /* listagemReposRequestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F435404E2237FF9300F6C856 /* Build configuration list for PBXNativeTarget "listagemReposRequestTests" */;
+			buildPhases = (
+				F43540412237FF9300F6C856 /* Sources */,
+				F43540422237FF9300F6C856 /* Frameworks */,
+				F43540432237FF9300F6C856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F435404B2237FF9300F6C856 /* PBXTargetDependency */,
+			);
+			name = listagemReposRequestTests;
+			productName = listagemReposRequestTests;
+			productReference = F43540452237FF9300F6C856 /* listagemReposRequestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F43540522238062200F6C856 /* listagemReposUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F435405A2238062200F6C856 /* Build configuration list for PBXNativeTarget "listagemReposUITests" */;
+			buildPhases = (
+				F435404F2238062200F6C856 /* Sources */,
+				F43540502238062200F6C856 /* Frameworks */,
+				F43540512238062200F6C856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F43540592238062200F6C856 /* PBXTargetDependency */,
+			);
+			name = listagemReposUITests;
+			productName = listagemReposUITests;
+			productReference = F43540532238062200F6C856 /* listagemReposUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +262,14 @@
 				TargetAttributes = {
 					F42D4A92221ACEE100A3A19E = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					F43540442237FF9300F6C856 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F42D4A92221ACEE100A3A19E;
+					};
+					F43540522238062200F6C856 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F42D4A92221ACEE100A3A19E;
 					};
 				};
 			};
@@ -157,6 +287,8 @@
 			projectRoot = "";
 			targets = (
 				F42D4A92221ACEE100A3A19E /* listagemRepos */,
+				F43540442237FF9300F6C856 /* listagemReposRequestTests */,
+				F43540522238062200F6C856 /* listagemReposUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +304,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F43540432237FF9300F6C856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43540512238062200F6C856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -180,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42D4A99221ACEE100A3A19E /* ViewController.swift in Sources */,
+				F487DE19222999A500AA7C05 /* NewRequest.swift in Sources */,
 				F42D4AAF221C2DF000A3A19E /* HttpRequest.swift in Sources */,
 				F42D4AAB221ACFC200A3A19E /* ListRepos.swift in Sources */,
 				F42D4A97221ACEE100A3A19E /* AppDelegate.swift in Sources */,
@@ -188,7 +335,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F43540412237FF9300F6C856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F435405F223826F100F6C856 /* MockRequester.swift in Sources */,
+				F43540622238279300F6C856 /* ListRepoFactory.swift in Sources */,
+				F43540482237FF9300F6C856 /* listagemReposRequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435404F2238062200F6C856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43540562238062200F6C856 /* listagemReposUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F435404B2237FF9300F6C856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42D4A92221ACEE100A3A19E /* listagemRepos */;
+			targetProxy = F435404A2237FF9300F6C856 /* PBXContainerItemProxy */;
+		};
+		F43540592238062200F6C856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42D4A92221ACEE100A3A19E /* listagemRepos */;
+			targetProxy = F43540582238062200F6C856 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F42D4A9A221ACEE100A3A19E /* Main.storyboard */ = {
@@ -362,6 +540,82 @@
 			};
 			name = Release;
 		};
+		F435404C2237FF9300F6C856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = listagemReposRequestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericksilva.listagemReposRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/listagemRepos.app/listagemRepos";
+			};
+			name = Debug;
+		};
+		F435404D2237FF9300F6C856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = listagemReposRequestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericksilva.listagemReposRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/listagemRepos.app/listagemRepos";
+			};
+			name = Release;
+		};
+		F435405B2238062200F6C856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = listagemReposUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericksilva.listagemReposUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/listagemRepos.app/listagemRepos";
+			};
+			name = Debug;
+		};
+		F435405C2238062200F6C856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = listagemReposUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericksilva.listagemReposUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/listagemRepos.app/listagemRepos";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -379,6 +633,24 @@
 			buildConfigurations = (
 				F42D4AA6221ACEE300A3A19E /* Debug */,
 				F42D4AA7221ACEE300A3A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F435404E2237FF9300F6C856 /* Build configuration list for PBXNativeTarget "listagemReposRequestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F435404C2237FF9300F6C856 /* Debug */,
+				F435404D2237FF9300F6C856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F435405A2238062200F6C856 /* Build configuration list for PBXNativeTarget "listagemReposUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F435405B2238062200F6C856 /* Debug */,
+				F435405C2238062200F6C856 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
